@@ -27,10 +27,8 @@ public class ShowHideContent : MonoBehaviour, IPointerDownHandler
             Content.SetActive(false);
             dropdownArraw.SetActive(true);
             UpArraw.SetActive(false);
-            // new Color(28,25,165,255)
             QuestionTxt.GetComponent<Text>().color=Color.blue;
-            // SurveyContainer.GetComponent<GridLayoutGroup>().spacing=new Vector2(0,-111.9f);
-           
+          
         }
         else 
         {
@@ -39,9 +37,7 @@ public class ShowHideContent : MonoBehaviour, IPointerDownHandler
             dropdownArraw.SetActive(false);
             UpArraw.SetActive(true);
             QuestionTxt.GetComponent<Text>().color=Color.gray;
-            // SurveyContainer.GetComponent<GridLayoutGroup>().spacing=new Vector2(0, 68.1f);
-            
-
+           
         }
     }
     

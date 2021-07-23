@@ -40,7 +40,7 @@ public class SurveyVisibility : MonoBehaviour
     }
    private IEnumerator Visibility()
    {
-    //    var Label=this.gameObject.name;
+   
        UnityWebRequest Question = UnityWebRequest.Get("http://localhost:4000/Question/readByName/"+Label);
        yield return Question.SendWebRequest();
         if (Question.isNetworkError || Question.isHttpError)
@@ -50,26 +50,23 @@ public class SurveyVisibility : MonoBehaviour
         }
         else
         {
-              var Questionresult = JsonUtility.FromJson<Question>(Question.downloadHandler.text);
-            //   WWWForm form = new WWWForm();
-            //   form.AddField("Visibility", "true");
-
+            var Questionresult = JsonUtility.FromJson<Question>(Question.downloadHandler.text);
             Question quest =new Question();
             quest.Visibility="true";
-           var Json=JsonUtility.ToJson(quest);
-              UnityWebRequest updateVisibility = UnityWebRequest.Put("http://localhost:4000/Question/update/Visibility/"+Questionresult._id,Json);
-              updateVisibility.SetRequestHeader("Content-Type", "application/json");
-              updateVisibility.SetRequestHeader("Accept", "application/json");
-              yield return updateVisibility.SendWebRequest();
-              if (updateVisibility.isNetworkError || updateVisibility.isHttpError)
-                {    
-                    Debug.Log(updateVisibility.error);
+            var Json=JsonUtility.ToJson(quest);
+            UnityWebRequest updateVisibility = UnityWebRequest.Put("http://localhost:4000/Question/update/Visibility/"+Questionresult._id,Json);
+            updateVisibility.SetRequestHeader("Content-Type", "application/json");
+            updateVisibility.SetRequestHeader("Accept", "application/json");
+            yield return updateVisibility.SendWebRequest();
+            if (updateVisibility.isNetworkError || updateVisibility.isHttpError)
+              {    
+                Debug.Log(updateVisibility.error);
                     
-                }
-                else
-                {
-                     Debug.Log("Visibility updated" );
-                }
+              }
+              else
+              {
+                Debug.Log("Visibility updated" );
+              }
 
         }
 

@@ -20,7 +20,7 @@ public class SurveyManager : MonoBehaviour
     void Start()
     {
         id = UserInfo.id;
-       Debug.Log(id);
+       
         StartCoroutine(GetAllUsers());
         StartCoroutine(GetQuestionList(id));
 
@@ -75,7 +75,7 @@ public class SurveyManager : MonoBehaviour
                         Optiontxt.GetComponent<Text>().text=item.OptionTxt;
                         float pourcentage=0;
                         if (int.Parse(item.NBVote)!=0){
-                            // float.Parse(myString, System.Globalization.CultureInfo.InvariantCulture.NumberFormat)
+                           
                             pourcentage = (float.Parse(item.NBVote, System.Globalization.CultureInfo.InvariantCulture) * 100 ) / float.Parse(nbUsers, System.Globalization.CultureInfo.InvariantCulture);
                         }
                         GameObject PecentageTxt = GameObject.Find(OptionGO.name+"/PecentageTxt");
@@ -96,9 +96,7 @@ public class SurveyManager : MonoBehaviour
     }
 
 
-public void getAllSurveys(){
-     StartCoroutine(GetQuestionList(id));
-}
+
 
    
 }

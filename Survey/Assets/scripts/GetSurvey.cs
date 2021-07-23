@@ -64,17 +64,7 @@ public class GetSurvey : MonoBehaviour
                         OptionGO.GetComponent<Toggle>().group=OptionContainer.GetComponent<ToggleGroup>();
                         GameObject Optiontxt = GameObject.Find(OptionGO.name+"/OptionTxt");
                         Optiontxt.GetComponent<Text>().text=item.OptionTxt;
-                        // float pourcentage=0;
-                        // if (int.Parse(item.NBVote)!=0){
-                        //     // float.Parse(myString, System.Globalization.CultureInfo.InvariantCulture.NumberFormat)
-                        //     pourcentage = (float.Parse(item.NBVote, System.Globalization.CultureInfo.InvariantCulture) * 100 ) / float.Parse(nbUsers, System.Globalization.CultureInfo.InvariantCulture);
-                        // }
-                        // GameObject PecentageTxt = GameObject.Find(OptionGO.name+"/PecentageTxt");
-                        // PecentageTxt.GetComponent<Text>().text=pourcentage.ToString()+"%";
-                        // GameObject progressBar = GameObject.Find(OptionGO.name+"/progressBar");
-                        // progressBar.GetComponent<Slider>().value=pourcentage;
-                        // GameObject NBVoteTxt = GameObject.Find(OptionGO.name+"/NBVoteTxt");
-                        // NBVoteTxt.GetComponent<Text>().text=item.NBVote.ToString()+"Votes";
+                       
 
                     }
           

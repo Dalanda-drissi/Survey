@@ -60,6 +60,13 @@ public class AddSurvey : MonoBehaviour
 
 public void create(){
    StartCoroutine(AddQuestion());
+   GameObject [] OptList = GameObject.FindGameObjectsWithTag("Option");
+   foreach (var item in OptList)
+   {
+       Destroy(item);
+   }
+   GameObject Question = GameObject.FindGameObjectWithTag("Question");
+   string QuestionTxt =Question.GetComponent<InputField>().text="";
  }
 }
  
