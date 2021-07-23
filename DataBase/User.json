@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "60f985b0b76267f87e00fc21"
+  },
+  "Email": "dalanda.drissi7@gmail.com",
+  "Password": "dalanda",
+  "Role": "Organisateur"
+},{
+  "_id": {
+    "$oid": "60f9bd5ab76267f87e00fc32"
+  },
+  "Email": "dalanda.drissi6@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd5db76267f87e00fc33"
+  },
+  "Email": "dalanda.drissi8@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd60b76267f87e00fc34"
+  },
+  "Email": "dalanda.drissi9@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd63b76267f87e00fc35"
+  },
+  "Email": "dalanda.drissi10@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd65b76267f87e00fc36"
+  },
+  "Email": "dalanda.drissi11@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd6ab76267f87e00fc37"
+  },
+  "Email": "dalanda.drissi12@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+},{
+  "_id": {
+    "$oid": "60f9bd6db76267f87e00fc38"
+  },
+  "Email": "dalanda.drissi13@gmail.com",
+  "Password": "dalanda",
+  "Role": "visiteur"
+}]

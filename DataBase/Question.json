@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "60fabb6548dd76ce24d21c88"
+  },
+  "OptionsList": [
+    {
+      "Label": "Option3",
+      "OptionTxt": "Option 1",
+      "NBVote": "4"
+    },
+    {
+      "Label": "Option33",
+      "OptionTxt": "Option 2",
+      "NBVote": "1"
+    }
+  ],
+  "Label": "Survey53",
+  "QuestionTxt": "Exemple de question 1",
+  "Creator": "60f985b0b76267f87e00fc21",
+  "Visibility": "false",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fae012cc0fba8d1b85cf14"
+  },
+  "OptionsList": [
+    {
+      "Label": "Option 1",
+      "OptionTxt": "sssssss",
+      "NBVote": "3"
+    },
+    {
+      "Label": "Option 2",
+      "OptionTxt": "sssssss",
+      "NBVote": "3"
+    }
+  ],
+  "Label": "Survey56",
+  "QuestionTxt": "Exemple de question 2",
+  "Creator": "60f985b0b76267f87e00fc21",
+  "Visibility": "false",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fafc35552ab709c01f1b56"
+  },
+  "OptionsList": [
+    {
+      "Label": "Option61",
+      "OptionTxt": "rrrrr",
+      "NBVote": "1"
+    }
+  ],
+  "Label": "Survey75",
+  "QuestionTxt": "dddddd",
+  "Creator": "60f985b0b76267f87e00fc21",
+  "Visibility": "true",
+  "__v": 0
+}]

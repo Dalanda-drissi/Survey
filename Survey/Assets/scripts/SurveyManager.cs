@@ -31,6 +31,7 @@ public class SurveyManager : MonoBehaviour
       
 
     }
+
     private IEnumerator GetAllUsers(){
        UnityWebRequest Users = UnityWebRequest.Get("http://localhost:4000/User/");
        yield return Users.SendWebRequest();
@@ -95,7 +96,9 @@ public class SurveyManager : MonoBehaviour
     }
 
 
-
+public void getAllSurveys(){
+     StartCoroutine(GetQuestionList(id));
+}
 
    
 }
