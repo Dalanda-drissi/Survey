@@ -16,6 +16,12 @@ TagManager:
   - NBVoteTxt
   - progressBar
   - SurveyContainer
+  - optionsContent
+  - SurveyPanel
+  - noSurveyTxt
+  - EndedSurveyTxt
+  - broadcastedSurvey
+  - Survey
   layers:
   - Default
   - TransparentFX
